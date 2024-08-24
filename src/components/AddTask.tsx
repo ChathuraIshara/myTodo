@@ -8,8 +8,8 @@ const AddTask = () => {
   const [modalOpen,setModalOpen]=useState<boolean>(false);
   return (
     <div>
-      <button onClick={()=>{}} className="bg-blue-500 rounded-md p-3 w-full font-bold text-white flex items-center justify-center gap-2">ADD NEW TASK<FaPlus size={18} /></button>
-      <Modal modalOpen={modalOpen}></Modal>
+      <button onClick={()=>{setModalOpen(true)}} className="bg-blue-500 rounded-md p-3 w-full font-bold text-white flex items-center justify-center gap-2">ADD NEW TASK<FaPlus size={18} /></button>
+      <Modal setModalOpen={setModalOpen} modalOpen={modalOpen}></Modal>
     </div>
   )
 }
